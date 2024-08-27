@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1430px;
+    font-family: 'Open Sans';
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("/images/bg-desktop.svg");
+}
+
+/* @media (min-width: 768px) {
+    body {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
+h1, button {
+    font-family: 'Poppins';
+}
+
+.huddle-logo {
+    margin: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+div h1, div p {
+    color: #fff;
+}
+
+div h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.info-right {
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+button {
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.51);
+-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.51);
+-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.51);
+    font-size: 16px;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    margin: 2rem;
+    justify-content: flex-end;
+}
+
+.socials {
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+.socials img:hover {
+    filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
